@@ -3,8 +3,8 @@
     "description": "BotMan integration for Symfony",
     "authors": [
         {
-            "name": "Sergio Gómez",
-            "email": "sergio@uco.es"
+            "name": "sm9sh",
+            "email": "sm9sh@ua.fm"
         }
     ],
     "type": "symfony-bundle",
@@ -14,7 +14,7 @@
         "ext-curl": "*",
         "ext-json": "*",
         "botman/botman": "^2.4",
-        "php-http/client-common": "^1.7",
+        "php-http/client-common": "^2.5",
         "php-http/client-implementation": "^1.0",
         "symfony/cache": "^3.4|^4.0|^6.0",
         "symfony/config": "^3.4|^4.0|^6.0",
