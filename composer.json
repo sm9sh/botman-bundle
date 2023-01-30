@@ -10,7 +10,7 @@
     "type": "symfony-bundle",
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.2|^8.1",
         "ext-curl": "*",
         "ext-json": "*",
         "botman/botman": "^2.4",
