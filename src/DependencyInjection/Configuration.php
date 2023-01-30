@@ -61,8 +61,8 @@ class Configuration implements ConfigurationInterface
     private function addFacebookConfiguration(): NodeDefinition
     {
         $treeBuilder = new TreeBuilder('facebook');
-
-        $treeBuilder->getRootNode()
+        $node = $treeBuilder->getRootNode();
+        $node
             ->children()
                 ->scalarNode('class')
                     ->defaultValue(FacebookDriver::class)
@@ -124,8 +124,8 @@ class Configuration implements ConfigurationInterface
     private function addTelegramConfiguration(): NodeDefinition
     {
         $treeBuilder = new TreeBuilder('telegram');
-
-        $treeBuilder->getRootNode()
+        $node = $treeBuilder->getRootNode();
+        $node
             ->children()
                 ->scalarNode('class')
                     ->defaultValue(TelegramDriver::class)
@@ -152,8 +152,8 @@ class Configuration implements ConfigurationInterface
     private function addHttpNode(): NodeDefinition
     {
         $treeBuilder = new TreeBuilder('http');
-
-        $node->getRootNode()
+        $node = $treeBuilder->getRootNode();
+        $node
             ->addDefaultsIfNotSet()
             ->children()
                 ->scalarNode('client')
